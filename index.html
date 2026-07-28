@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Ranabhat - AWS Practice - CLD 600</title>
     <link rel="stylesheet" href="styles.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -22,14 +25,8 @@
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-subtitle">Welcome to</div>
-            <h2>Ayush Ranabhat's AWS Practice</h2>
-            <p>Master AWS Cloud Solutions and Best Practices - CLD 600</p>
-            <a href="#projects" class="cta-button">Explore Projects</a>
-        </div>
-    </header>
+    <!-- React Hero Component Container -->
+    <div id="hero-container"></div>
 
     <section id="about" class="about">
         <div class="container">
@@ -143,5 +140,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="hero-component.js"></script>
 </body>
 </html>
