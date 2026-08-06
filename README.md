@@ -1,70 +1,89 @@
 # AWS Practice - CLD 600
 
 ## 📚 Overview
-A comprehensive repository for AWS cloud solutions, architectural patterns, and best practices. This project includes a static website built with HTML, CSS, and JavaScript to showcase AWS learning materials and resources.
+A modern Next.js web application for AWS cloud solutions, architectural patterns, and best practices. Built with TypeScript, Tailwind CSS, and the React ecosystem.
 
-## 🌐 Static Website
+## 🚀 Tech Stack
 
-The repository includes a professional static website with the following features:
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui compatible
+- **Package Manager**: npm/yarn
+- **Node Version**: 18+
 
-### Pages & Sections
-- **Home (Hero Section)**: Eye-catching landing page with call-to-action
-- **About**: Overview of the repository and key features
-- **Projects**: Featured AWS topics and areas of study
-- **Resources**: Links to learning materials and tools
-- **Footer**: Contact information and quick links
+## 📁 Project Structure
 
-### Features
-- ✨ Responsive design (mobile, tablet, desktop)
-- 🎨 Modern CSS styling with AWS-inspired color scheme
-- 🔄 Smooth scrolling navigation
-- 📱 Mobile-optimized layout
-- ⚡ Lightweight and fast-loading
-- 🎯 Clean, professional design
-
-### File Structure
 ```
-├── index.html          # Main HTML file
-├── styles.css          # Styling and responsive design
-├── script.js           # Interactive functionality
-└── README.md           # This file
+AWS_Practice/
+├── app/
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── Navbar.tsx          # Navigation bar
+│   ├── Hero.tsx            # Hero section
+│   ├── About.tsx           # About section
+│   ├── Projects.tsx        # Projects section
+│   ├── Resources.tsx       # Resources section
+│   └── Footer.tsx          # Footer section
+├── public/                 # Static assets
+├── package.json            # Dependencies
+├── tsconfig.json           # TypeScript config
+├── tailwind.config.ts      # Tailwind config
+├── postcss.config.js       # PostCSS config
+└── next.config.js          # Next.js config
 ```
 
-## 🚀 Getting Started
+## 🛠️ Installation & Setup
 
-### View the Website
-1. Clone this repository
+### Prerequisites
+- Node.js 18+ and npm/yarn installed
+
+### Quick Start
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/Ayush-Ranabhat/AWS_Practice.git
    cd AWS_Practice
    ```
 
-2. Open `index.html` in your browser
-   - Double-click the file, or
-   - Right-click → Open with Browser, or
-   - Use a local server (see below)
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### Using a Local Server (Recommended)
-For the best experience, use a local server:
+3. **Run development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-**Python 3:**
-```bash
-python -m http.server 8000
-```
+4. **Open in browser**
+   Navigate to `http://localhost:3000`
 
-**Python 2:**
-```bash
-python -m SimpleHTTPServer 8000
-```
+## 📦 Available Scripts
 
-**Node.js (http-server):**
-```bash
-npx http-server
-```
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-Then open `http://localhost:8000` in your browser.
+## 🎨 Color Scheme
 
-## 📖 AWS Topics Covered
+The project uses a light blue and Azure color palette:
+
+- **Primary Blue**: `#0078D4`
+- **Secondary Blue**: `#005A9E`
+- **Azure**: `#00BCF2`
+- **Light Blue**: `#E7F3F8`
+
+Colors are defined in `tailwind.config.ts` and can be customized.
+
+## 📝 AWS Topics Covered
 
 ### Core Services
 - **EC2 & Compute**: Virtual machine instances and compute solutions
@@ -75,63 +94,56 @@ Then open `http://localhost:8000` in your browser.
 ### Infrastructure & Security
 - **VPC & Networking**: Virtual private cloud setup
 - **Security & IAM**: Identity and access management
-- **CloudFormation**: Infrastructure as Code
 
-## 🎓 Learning Resources
+## 🧩 Component Structure
 
-- [AWS Official Documentation](https://docs.aws.amazon.com/)
-- [AWS Free Tier](https://aws.amazon.com/free/)
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Training and Certification](https://aws.amazon.com/training/)
+All React components are located in the `/components` directory:
 
-## 🛠️ Customization
+- **Navbar**: Navigation with active link tracking
+- **Hero**: Main landing section with CTA button
+- **About**: Repository overview with feature cards
+- **Projects**: AWS topic showcase
+- **Resources**: Learning resources grid
+- **Footer**: Contact information and links
 
-To customize the website:
+## 🎯 Features
 
-1. **Update content**: Edit `index.html` to add/modify sections
-2. **Change colors**: Modify CSS variables in `styles.css`:
-   ```css
-   :root {
-       --primary-color: #FF9900;      /* AWS orange */
-       --secondary-color: #232F3E;    /* AWS dark blue */
-   }
-   ```
-3. **Add interactivity**: Extend functionality in `script.js`
+- ✨ Modern, responsive design
+- 🎨 Light blue and Azure color scheme
+- 📱 Mobile-optimized layout
+- ⚡ Fast page loads with Next.js
+- 🔍 TypeScript for type safety
+- 🎭 Smooth animations and transitions
+- ♿ Accessible components
+- 📧 Contact information section
 
-## 📱 Responsive Breakpoints
+## 📱 Responsive Design
 
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
-- **Small Mobile**: Below 480px
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Add new AWS topics and content
-- Improve styling and design
-- Fix bugs and issues
-- Enhance documentation
-
-## 📝 License
-
-This project is open source and available under the MIT License.
+The website is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
 
 ## 👤 Author
 
 **Ayush Ranabhat**
 - GitHub: [@Ayush-Ranabhat](https://github.com/Ayush-Ranabhat)
+- Email: Ayura833@gmail.com
 
 ## 📞 Contact & Support
 
-For questions, suggestions, or support:
+For questions or suggestions:
 - Open an issue on [GitHub Issues](https://github.com/Ayush-Ranabhat/AWS_Practice/issues)
-- Check existing documentation and resources
-- Review AWS official documentation
+- Email: Ayura833@gmail.com
+- Check [AWS Documentation](https://docs.aws.amazon.com/)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 
 ---
 
-**Last Updated**: 2026-07-26
+**Last Updated**: 2026
 **Course**: CLD 600 - AWS Cloud Solutions
 
 Happy Learning! ☁️
